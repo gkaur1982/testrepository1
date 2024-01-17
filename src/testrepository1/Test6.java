@@ -6,10 +6,7 @@ public static void main(String[] args) {
 	int	j= 86399%24;
 	int k = i%60;
 	int l = i/60;
-		System.out.println(j);
-		System.out.println(k);
-		System.out.println(l);
-
-	
+		System.out.println(j+"Hour" +k+"Minutes" +l+"Seconds");
+			
 }
 }
