@@ -1,9 +1,15 @@
 package testrepository2;
 
+import java.util.Scanner;
+
 class Test1{
 	public static void main(String[] args) {
-	int i = 10; 
-	int j = 6;
+	Scanner num1 = new Scanner(System.in);
+	System.out.println("Enter value of i");	
+	int i = num1.nextInt();
+	Scanner num2 = new Scanner(System.in);
+	System.out.println("Enter value of j");
+	int j = num2.nextInt();
 	int k= i+j;
 	int l= i-j;
 	int m=i*j;
