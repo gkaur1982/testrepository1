@@ -1,12 +1,19 @@
 package testrepository1;
 
+import java.util.Scanner;
+
 public class Test6 {
-public static void main(String[] args) {
-	int i = 86399/24;
-	int	j= 86399%24;
-	int k = i%60;
-	int l = i/60;
-		System.out.println(j+"Hour" +k+"Minutes" +l+"Seconds");
-			
+	public static void main(String[] args) {
+		Scanner j = new Scanner(System.in);
+		System.out.println("Enter Seconds");	
+		int i = j.nextInt();
+	int hours = i/ 3600;
+	int remainingSeconds = i % 3600;
+    int minutes = remainingSeconds / 60;
+    int seconds = remainingSeconds % 60;
+    System.out.println("Converted time: " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds");
+
+
+    
 }
 }
