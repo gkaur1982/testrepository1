@@ -2,19 +2,18 @@ package testrepository2;
 
 import java.util.Scanner;
 
-public class Fibonacci{
-	public static void main(String[] arg) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter number for Fibonanacci number");
-		 int n = scanner.nextInt();
-	        
-	        int first = 0, second = 1;
-	        System.out.println("Fibonacci sequence up to " + n + " terms:");
-	        for (int i = 0; i < n; i++) {
-	            System.out.print(first + " ");
-	            int next = first + second;
-	            first = second;
-	            second = next;
-	        }
-	    }
-	}
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        scanner.close();
+
+        System.out.println("Factors of " + number + " are: ");
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
